@@ -1,42 +1,16 @@
-# Spotlight
+# kylewigs.com
 
-Spotlight is a [Tailwind UI](https://tailwindui.com) site template built using [Tailwind CSS](https://tailwindcss.com) and [Next.js](https://nextjs.org).
+## Features
 
-## Getting started
-
-To get started with this template, first install the npm dependencies:
-
-```bash
-npm install
-```
-
-Next, create a `.env.local` file in the root of your project and set the `NEXT_PUBLIC_SITE_URL` variable to your site's public URL:
-
-```
-NEXT_PUBLIC_SITE_URL=https://example.com
-```
-
-Next, run the development server:
-
-```bash
-npm run dev
-```
-
-Finally, open [http://localhost:3000](http://localhost:3000) in your browser to view the website.
-
-## Customizing
-
-You can start editing this template by modifying the files in the `/src` folder. The site will auto-update as you edit these files.
-
-## License
-
-This site template is a commercial product and is licensed under the [Tailwind UI license](https://tailwindui.com/license).
-
-## Learn more
-
-To learn more about the technologies used in this site template, see the following resources:
-
-- [Tailwind CSS](https://tailwindcss.com/docs) - the official Tailwind CSS documentation
-- [Next.js](https://nextjs.org/docs) - the official Next.js documentation
-- [Headless UI](https://headlessui.dev) - the official Headless UI documentation
-- [MDX](https://mdxjs.com) - the MDX documentation
+- **Responsive Design**: Works seamlessly on all devices and browsers.
+- **MDX and Markdown Support**: Write posts using MDX or Markdown, with extensive flexibility.
+- **Optimized for SEO**: Includes sitemaps, robots.txt, and metadata for better search engine visibility.
+- **Dynamic OpenGraph (OG) Images**: Automatically generate OG images for social media sharing.
+- **Syntax Highlighting**: Built-in support for highlighting code blocks.
+- **Tailwind v4**: Fully configured with the latest version of Tailwind CSS for efficient styling.
+- **Automated Blog Time Dating**: Automatically manage post creation and updated timestamps.
+- **Extensive Frontmatter**: Customize posts with rich metadata and organizational fields.
+- **Clean and Simple Structure**: Easy-to-navigate codebase for efficient customization.
+- **Light and Dark Mode**: Simple theming with light/dark mode toggle support.
+- **Foundations for Expansion**: Built with flexibility in mind, allowing easy expansion and customization.
+- **Theming**: Easily extend or customize themes to suit your brand.

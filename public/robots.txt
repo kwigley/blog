@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://kylewigs.com
+
+# Sitemaps
+Sitemap: https://kylewigs.com/sitemap.xml

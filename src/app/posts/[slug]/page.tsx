@@ -1,4 +1,5 @@
 import { allPosts, Post } from "content-collections"
+import { Metadata } from "next";
 import { notFound } from "next/navigation"
 
 interface PostPage {

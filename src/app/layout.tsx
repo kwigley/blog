@@ -1,39 +1,34 @@
-import { type Metadata } from 'next'
+import type { Metadata } from "next";
+import { Geist, Geist_Mono } from "next/font/google";
+import "./globals.css";
 
-import { Providers } from '@/app/providers'
-import { Layout } from '@/components/Layout'
+const geistSans = Geist({
+  variable: "--font-geist-sans",
+  subsets: ["latin"],
+});
 
-import '@/styles/tailwind.css'
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
-  title: {
-    template: '%s - Kyle Wigley',
-    default:
-      'Kyle Wigley - computer technologist, data enthusiast, sports fan',
-  },
-  description:
-    'I’m Kyle, a computer programmer and sports enthusiast. I currently work for Swish Analytics, where we develop technologies that power oddsmaking and risk management for sportsbook operators.',
-  alternates: {
-    types: {
-      'application/rss+xml': `${process.env.NEXT_PUBLIC_SITE_URL}/feed.xml`,
-    },
-  },
-}
+  title: "kylewigs",
+  description: "Kyle Wigleys's corner of the internet",
+};
 
 export default function RootLayout({
   children,
-}: {
-  children: React.ReactNode
-}) {
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
   return (
-    <html lang="en" className="h-full antialiased" suppressHydrationWarning>
-      <body className="flex h-full bg-zinc-50 dark:bg-black">
-        <Providers>
-          <div className="flex w-full">
-            <Layout>{children}</Layout>
-          </div>
-        </Providers>
+    <html lang="en">
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      >
+        {children}
       </body>
     </html>
-  )
+  );
 }

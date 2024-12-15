@@ -1,6 +1,9 @@
-
 export function Hero() {
   return (
-    <section>Kyle Wigley</section>
-  )
+    <section className="space-y-3.5">
+      <div className="flex items-center space-x-2">
+        <h2>Kyle Wigley</h2>
+      </div>
+    </section>
+  );
 }

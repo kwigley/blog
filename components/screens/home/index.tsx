@@ -1,8 +1,7 @@
 import { Footer } from "@/components/footer";
+import Link from "@/components/link";
 import * as FadeIn from "@/components/motion/staggers/fade";
 import { Posts } from "@/components/posts";
-
-import Link from "next/link";
 
 const Spacer = () => <div style={{ marginTop: "24px" }} />;
 
@@ -14,15 +13,9 @@ export default function Home() {
           <div>
             <h1>kyle wigley</h1>
             <h2>
-              aka{" "}
-              <Link href="https://github.com/kwigley" target="_blank" className="underline">
-                @kwigley
-              </Link>
+              aka <Link href="https://github.com/kwigley" text="@kwigley" underline />
               <br />
-              aka{" "}
-              <Link href="https://x.com/kylewigs" target="_blank" className="underline">
-                @kylewigs
-              </Link>
+              aka <Link href="https://x.com/kylewigs" text="@kylewigs" underline />
               <br />
               aka my grandma's personal IT specialist
             </h2>
@@ -33,10 +26,7 @@ export default function Home() {
       <FadeIn.Item>
         <p>craft, refine, ship</p>
         <p>
-          currently writing rust at{" "}
-          <Link href="https://swishanalytics.com/business/" className="underline" target="_blank">
-            swish analytics
-          </Link>
+          currently writing rust at <Link href="https://swishanalytics.com/business/" text="swish analytics" underline />
         </p>
       </FadeIn.Item>
       <FadeIn.Item>

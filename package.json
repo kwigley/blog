@@ -10,7 +10,8 @@
     "mdx:timestamps": "node ./scripts/update-mdx-timestamps",
     "lint:biome": "npx biome check --fix --unsafe .",
     "lint:prettier": "npx prettier . --write --log-level warn",
-    "lint": "npm run lint:prettier && npm run lint:biome"
+    "lint": "npm run lint:prettier && npm run lint:biome",
+    "prepare": "husky"
   },
   "dependencies": {
     "@mdx-js/loader": "^3.1.0",
@@ -66,6 +67,7 @@
     "@types/react-dom": "^18.3.5",
     "eslint": "^9.21.0",
     "eslint-config-next": "14.2.15",
+    "husky": "^9.1.7",
     "postcss": "^8.5.3",
     "prettier": "3.3.3",
     "stylelint": "^16.15.0",

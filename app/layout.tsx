@@ -1,11 +1,11 @@
 import "@/styles/main.css";
 
 import type { Metadata } from "next";
-import { Analytics } from "@vercel/analytics/next";
 
 import { Providers } from "@/components/providers";
 import { OpenGraph } from "@/lib/og";
 
+import { Analytics } from "@vercel/analytics/next";
 import clsx from "clsx";
 import { Inter } from "next/font/google";
 

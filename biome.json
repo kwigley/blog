@@ -35,6 +35,7 @@
       "correctness": {
         "noUnusedImports": "error"
       },
+      "suspicious": { "noExplicitAny": "off" },
       "a11y": {
         "noSvgWithoutTitle": "off"
       }

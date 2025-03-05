@@ -1,5 +1,6 @@
 import type { MDXComponents } from "mdx/types";
 import type { MDXRemoteProps } from "next-mdx-remote/rsc";
+import type { JSX } from "react";
 import type { PluggableList } from "unified";
 
 import FootnoteBackReference from "@/components/footnote/back-reference";
@@ -64,7 +65,7 @@ const components: MDXComponents = {
   ol: ({ className, ...props }: React.HTMLAttributes<HTMLOListElement>) => {
     if (
       React.Children.toArray(props.children).some(
-        (child) => React.isValidElement(child) && (child as React.ReactElement).props.id?.includes("user-content-fn-"),
+        (child) => React.isValidElement(child) && (child as React.ReactElement<any>).props.id?.includes("user-content-fn-"),
       )
     ) {
       return (
@@ -84,6 +85,7 @@ const components: MDXComponents = {
           {React.Children.map(children, (child) => {
             if (React.isValidElement(child)) {
               if (child.type === "p") {
+                // @ts-ignore
                 const href = child.props.children.find((child: React.ReactNode) => {
                   if (React.isValidElement(child)) {
                     return React.isValidElement(child) && "props" in child && (child.props as { href?: string }).href?.includes("user-content-fnref-");
@@ -91,6 +93,7 @@ const components: MDXComponents = {
                   return false;
                 })?.props.href;
 
+                // @ts-ignore
                 const filtered = child.props.children.filter((child: React.ReactNode) => {
                   if (React.isValidElement(child)) {
                     return !(React.isValidElement(child) && "props" in child && (child.props as { href?: string }).href?.includes("user-content-fnref-"));

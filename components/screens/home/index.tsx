@@ -15,8 +15,6 @@ export default function Home() {
             <h2>
               aka <Link href="https://github.com/kwigley" text="@kwigley" underline />
               <br />
-              aka <Link href="https://x.com/kylewigs" text="@kylewigs" underline />
-              <br />
               aka my grandma's personal IT specialist
             </h2>
           </div>

@@ -1,6 +1,7 @@
 import "@/styles/main.css";
 
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/next";
 
 import { Providers } from "@/components/providers";
 import { OpenGraph } from "@/lib/og";
@@ -30,6 +31,7 @@ export default function RootLayout({
             <article className="article">{children}</article>
           </main>
         </Providers>
+        <Analytics />
       </body>
     </html>
   );

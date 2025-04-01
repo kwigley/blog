@@ -36,15 +36,13 @@
     "lucide": "^0.486.0",
     "lucide-react": "^0.486.0",
     "motion": "^12.6.2",
-    "next": "15.2.1",
+    "next": "15.2.4",
     "next-mdx-remote": "^5.0.0",
     "next-sitemap": "^4.2.3",
-    "next-themes": "^0.4.0",
+    "next-themes": "^0.4.6",
     "next-view-transitions": "^0.3.4",
     "path": "^0.12.7",
-    "postcss-nested": "^7.0.0",
-    "react": "19.1.0",
-    "react-dom": "19.1.0",
+    "postcss-nested": "^7.0.2",
     "reading-time-estimator": "^1.12.0",
     "rehype-highlight": "^7.0.2",
     "rehype-pretty-code": "^0.14.1",
@@ -52,9 +50,9 @@
     "remark-gfm": "^4.0.1",
     "remark-rehype": "^11.1.1",
     "remark-toc": "^9.0.0",
-    "shiki": "^3.0.0",
+    "shiki": "^3.2.1",
     "tailwind-highlightjs": "^2.0.1",
-    "tailwind-merge": "^3.0.0",
+    "tailwind-merge": "^3.1.0",
     "unified": "^11.0.5"
   },
   "devDependencies": {
@@ -62,10 +60,8 @@
     "@ianvs/prettier-plugin-sort-imports": "^4.4.1",
     "@tailwindcss/postcss": "^4.0.17",
     "@tailwindcss/typography": "^0.5.16",
-    "@trivago/prettier-plugin-sort-imports": "^5.0.0",
+    "@trivago/prettier-plugin-sort-imports": "^5.2.2",
     "@types/node": "^22.13.14",
-    "@types/react": "19.0.12",
-    "@types/react-dom": "19.0.4",
     "eslint": "^9.23.0",
     "eslint-config-next": "15.2.4",
     "husky": "^9.1.7",
@@ -78,9 +74,5 @@
     "tailwindcss": "^4.0.17",
     "typescript": "^5.8.2"
   },
-  "trustedDependencies": ["@biomejs/biome"],
-  "overrides": {
-    "@types/react": "19.0.12",
-    "@types/react-dom": "19.0.4"
-  }
+  "trustedDependencies": ["@biomejs/biome"]
 }

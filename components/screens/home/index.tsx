@@ -12,19 +12,14 @@ export default function Home() {
         <div className="flex justify-between">
           <div>
             <h1>kyle wigley</h1>
-            <h2>
-              aka <Link href="https://github.com/kwigley" text="@kwigley" underline />
-              <br />
-              aka my grandma's computer guy
-            </h2>
+            <h2>aka my grandma's computer guy</h2>
           </div>
         </div>
       </FadeIn.Item>
       <Spacer />
       <FadeIn.Item>
-        <p>craft, refine, ship</p>
         <p>
-          currently writing rust at <Link href="https://swishanalytics.com/business/" text="swish analytics" underline />
+          craft, refine, ship ⋅ currently writing rust at <Link href="https://swishanalytics.com/business/" text="swish analytics" underline />
         </p>
       </FadeIn.Item>
       <FadeIn.Item>
